@@ -2,7 +2,7 @@ require:
 php
 
 usage:
-# ./PhpResolveOnOS PORT
+# ./PhpResolveOnYour.OS PORT
 
 default port 8000
 
