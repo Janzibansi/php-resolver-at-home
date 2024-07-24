@@ -1,6 +1,11 @@
 require:
 php
 
+usage:
+# ./PhpResolveOnOS PORT
+
+default port 8000
+
 intervall 1 second, set in index.php at
         // Refresh content every second
         setInterval(refreshContent, 1000);
