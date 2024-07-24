@@ -1,0 +1,47 @@
+/* styles.css */
+
+/* General body styles */
+body {
+    background-color: #1b3947;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* h1 styles */
+h1 {
+    color: #ffa600;           /*  heading color */
+    text-align: center;       /* Center the heading text */
+    font-size: 2.5em;         /* Increase font size for the heading */
+    margin-top: 10px;         /* Add space above the heading */
+    margin-bottom: 10px;      /* Add space below the heading */
+    font-family: 'Comic Sans MS', bold,  sans-serif; /* Apply Comic Sans font */
+}
+
+#phpContent {
+    border: 2px solid #ccc; /*  border */
+    border-radius: 5px;     /* corners */
+    padding: 15px;          /* Padding inside the container */
+    margin-top: 20px;       /* Space above the container */
+    background-color: #000000; /* background color */
+    max-height: 500px;      /* Maximum height of the container */
+    overflow-y: auto;       /* Scroll vertically if content exceeds max-height */
+    color: #c4c4c4;         /* text color */
+}
+
+button {
+    padding: 2px 5px;           /* Padding inside the button */
+    border: none;                 /* Remove default border */
+    border-radius: 2px;           /*  corners */
+    color: #ffffff;                   /* text color */
+    background-color: #005e75;    /*  background color */
+    cursor: pointer;               /* Pointer cursor on hover */
+    font-size: 16px;              /* Font size */
+}
+
+button.big-red-button {
+    background-color: #df0a0a;    /* button background color */
+    display: none; /* Hides the button completely */
+}

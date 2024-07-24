@@ -1,0 +1,23 @@
+@echo off
+setlocal
+
+:: Default port
+set "DEFAULT_PORT=8000"
+
+:: Use the provided port if given, otherwise use the default port
+set "PORT=%1"
+if "%PORT%"=="" set "PORT=%DEFAULT_PORT%"
+
+:: Start the PHP built-in server
+start /b php -S 127.0.0.1:%PORT%
+
+:: Open the URL in the default browser
+start http://127.0.0.1:%PORT%
+
+:: Wait for the PHP server process to finish
+:wait_loop
+timeout /t 1 >nul
+tasklist /FI "WINDOWTITLE eq php.exe" 2>NUL | find /I /N "php.exe">NUL
+if "%ERRORLEVEL%"=="0" goto wait_loop
+
+endlocal

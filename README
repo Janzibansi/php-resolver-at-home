@@ -1,0 +1,6 @@
+require:
+php
+
+intervall 1 second, set in index.php at
+        // Refresh content every second
+        setInterval(refreshContent, 1000);
